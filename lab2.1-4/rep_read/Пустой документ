@@ -1,0 +1,8 @@
+BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+INSERT INTO Faculty(FacultyName, Deccan_ID, NumberOfPlaces) VALUES
+('Institute of Asian and African', 7, 60);
+UPDATE Faculty                              
+SET NumberOfPlaces = NumberOfPlaces + 40
+WHERE Faculty_ID = 1;
+END;
+--=================================================1
